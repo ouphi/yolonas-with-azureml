@@ -1,0 +1,13 @@
+$schema: https://azuremlschemas.azureedge.net/latest/commandJob.schema.json
+command: python kdtrain.py ${{outputs.checkpoint_dir}}
+code: ../yolonas-kd-training
+environment: azureml:yolonas-env:1
+display_name: kd-training
+experiment_name: kd-training
+compute: azureml:<your-compute-cluster>
+description: |
+  # Knowledge Distillation training
+  
+  Example of a training using Knowledge Distillation using a teacher model to train a student model.
+outputs:
+  checkpoint_dir:
