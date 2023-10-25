@@ -1,4 +1,4 @@
-# Train YOLO-NAS with AzureML
+# Super-gradients knowledge distillation
 
 ## Example of training using Knowledge distillation
 
